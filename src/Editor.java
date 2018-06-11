@@ -48,7 +48,7 @@ public class Editor {
         if (nErros == 0) {
           t2.setText("Compilado com sucesso\n");
         } else {
-          t2.setText("==== Compilação completa ===\n");
+          t2.setText("==== CompilaÃ§Ã£o completa ===\n");
           String contadorDeErros;
           if (nErros == 1) {
             contadorDeErros = "%s erro encontrado\n";
@@ -74,17 +74,17 @@ public class Editor {
   }
 
   public static void main(String[] args) {
-	  try {
-          for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-              if ("Windows".equals(info.getName())) {
-                  javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                  break;
-              }
-          }
-      } catch (ClassNotFoundException|IllegalAccessException |javax.swing.UnsupportedLookAndFeelException
-    		  | InstantiationException ex) {
-          System.out.println("Houve um grande BUG big brother");
-      }
+// 	  try {
+//           for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//               if ("Windows".equals(info.getName())) {
+//                   javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                   break;
+//               }
+//           }
+//       } catch (ClassNotFoundException|IllegalAccessException |javax.swing.UnsupportedLookAndFeelException
+//     		  | InstantiationException ex) {
+//           System.out.println("Houve um grande BUG big brother");
+//       }
     Editor e = new Editor();
     e.prepararJanela();
   }
